@@ -162,31 +162,6 @@ O site monitorado pelo script é uma página HTML simples e moderna, criada por 
 
 ---
 
-## 🖥 Prévia do site
-
-Adicione aqui uma captura de tela do site. Por exemplo:
-
-```markdown
-![Captura de Tela do Site](D:\imagem\Fotos minhas)
-```
-
----
-
-## 🛠 Melhorias Futuras
-
-- Adicionar suporte para múltiplos sites a serem monitorados.
-- Implementar envio de notificações por outras plataformas (e.g., Slack, Telegram).
-- Criar um sistema de logs rotativos para evitar arquivos grandes.
-- Adicionar testes automatizados para validar o funcionamento do script.
-
----
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
----
-
 ## 📄 Licença
 
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
