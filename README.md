@@ -164,6 +164,81 @@ O site monitorado pelo script é uma página HTML simples e moderna, criada por 
 
 ---
 
+## 🌐 Configuração do Servidor com Nginx
+
+O trecho de código abaixo configura o **Nginx** para servir arquivos de um diretório específico no seu sistema. Essa configuração é útil para hospedar a página HTML que será monitorada pelo script Bash.
+
+### 📄 Código de Configuração Nginx
+
+```nginx
+server {
+    listen 0.0.0.0:80;
+    server_name 172.28.168.201 localhost;
+
+    root /mnt/d/projetoLinuxPb;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+---
+
+### 🛠️ Explicação do Código
+1. **`listen 0.0.0.0:80;`**
+   - Configura o servidor para escutar conexões na porta 80 (HTTP) em todas as interfaces de rede disponíveis.
+
+2. **`server_name 172.28.168.201 localhost;`**
+   - Define os nomes de domínio ou endereços IP que este servidor irá responder. Neste caso, o servidor responde tanto ao IP `172.28.168.201` quanto ao `localhost`.
+
+3. **`root /mnt/d/projetoLinuxPb;`**
+   - Especifica o diretório onde estão os arquivos que serão servidos. Aqui, a raiz do servidor é definida como `/mnt/d/projetoLinuxPb`.
+
+4. **`index index.html;`**
+   - Define o arquivo padrão a ser exibido quando o usuário acessa a raiz do servidor (`/`). Neste caso, o arquivo `index.html`.
+
+5. **Bloco `location /`**
+   - Configura o comportamento para requisições feitas ao caminho `/`.
+   - **`try_files $uri $uri/ =404;`**:
+     - Verifica se o arquivo ou diretório solicitado existe:
+       - `$uri`: Procura o arquivo correspondente ao caminho requisitado.
+       - `$uri/`: Procura um diretório correspondente ao caminho requisitado.
+       - `=404`: Retorna um erro 404 caso o arquivo ou diretório não sejam encontrados.
+
+---
+
+### 💡 Como Usar
+
+1. **Copie o código acima** e salve-o em um arquivo de configuração do Nginx, por exemplo:
+   ```bash
+   sudo nano /etc/nginx/sites-available/projetoLinuxPb
+   ```
+
+2. **Crie um link simbólico** para habilitar o site:
+   ```bash
+   sudo ln -s /etc/nginx/sites-available/projetoLinuxPb /etc/nginx/sites-enabled/
+   ```
+
+3. **Teste a configuração do Nginx** para garantir que não há erros:
+   ```bash
+   sudo nginx -t
+   ```
+
+4. **Reinicie o Nginx** para aplicar as alterações:
+   ```bash
+   sudo systemctl restart nginx
+   ```
+
+---
+
+### 🖥️ Resultado Esperado
+
+Quando configurado corretamente, ao acessar o IP ou o domínio configurado no navegador (ex.: `http://172.28.168.201` ou `http://localhost`), o Nginx servirá o arquivo `index.html` localizado no diretório `/mnt/d/projetoLinuxPb`.
+
+---
+
 ## 🖥️ Código-fonte (resumo do HTML)
 
 ```html
