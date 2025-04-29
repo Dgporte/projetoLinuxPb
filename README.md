@@ -103,9 +103,15 @@ fi
 
 Executar o comando ```bash sudo systemctl start nginx``` inicia o servidor Nginx, o que faz com que o site fique acessível no navegador com seu IP ou localhost.
 
+## Visualização do Site em Execução
+
 ![Tela inicial do site](imagens/siteon.jpg)
 
 Executar o comando ```bassudo systemctl stop nginx``` interrompe o servidor Nginx, fazendo com que o site deixe de estar disponível no navegador.
+
+## Visualização do Site Fora do Ar
+
+![Tela fora do ar](imagens/siteoff.jpg)
 
 ## 🌐 Site Monitorado
 
