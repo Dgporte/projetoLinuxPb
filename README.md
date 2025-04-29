@@ -99,6 +99,12 @@ fi
 
 ---
 
+## ✅ Verificações do Site
+
+Executar o comando ```bash sudo systemctl start nginx``` inicia o servidor Nginx, o que faz com que o site fique acessível no navegador com seu IP ou localhost.
+
+Executar o comando ```bassudo systemctl stop nginx``` interrompe o servidor Nginx, fazendo com que o site deixe de estar disponível no navegador.
+
 ## 🌐 Site Monitorado
 
 O site monitorado pelo script é uma página HTML simples e moderna, criada por mim, com layout responsivo, animações e design agradável. Ele simula uma página profissional hospedada em um ambiente Linux, e serve como alvo para o monitoramento automatizado.
