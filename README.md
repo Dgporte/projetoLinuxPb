@@ -86,6 +86,35 @@ else
   send_discord_alert ":white_check_mark: $LOG_MSG"
 fi
 ```
+---
+
+## 👾 Criação do Webhook no Discord
+
+Para monitorar se o servidor está fora do ar, criei um Webhook usando o Discord. Primeiro, abri o Discord e, no menu à esquerda, cliquei no botão de "+" para criar um novo servidor. Escolhi a opção "Criar o meu" e depois selecionei "Para meus amigos e eu". Depois disso, dei um nome ao servidor e cliquei em "Criar" para finalizar a configuração inicial.
+
+## Primeiro Crie Um Servidor no Discord 
+
+![Criar servidor](imagens/criarservidor.jpg)
+
+## Segundo Vá na Engrenagem do Geral
+
+![configuraçao](imagens/configcanal.jpg)
+
+## Terceiro Clique em Integrações 
+
+![integracoes](imagens/integracao.jpg)
+
+## Quarto Clique em Criar Webhook 
+
+![webkook](imagens/webook.jpg)
+
+## Quinto Clique no Boot que Foi Criado
+
+![clicarboot](imagens/clicarboot.jpg)
+
+## Por Último Clique em Copiar URL do Webhook
+
+![copywebkook](imagens/copiarwebook.jpg)
 
 ---
 
