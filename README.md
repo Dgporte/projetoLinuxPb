@@ -167,7 +167,7 @@ O site monitorado pelo script é uma página HTML simples e moderna, criada por 
 Adicione aqui uma captura de tela do site. Por exemplo:
 
 ```markdown
-![Captura de Tela do Site](assets/screenshot.png)
+![Captura de Tela do Site](D:\imagem\Fotos minhas)
 ```
 
 ---
