@@ -8,41 +8,41 @@ A proposta é criar um script em Bash para monitorar se um site está online ou 
 
 ## 🚀 Como usar
 
-1. *Clone este repositório*
-   bash
+1. **Clone este repositório**
+   ```bash
    git clone https://github.com/seu-usuario/projetoLinuxPb.git
    cd projetoLinuxPb
-   
+   ```
 
-2. *Torne o script executável*
-   bash
+2. **Torne o script executável**
+   ```bash
    chmod +x meu_script.sh
-   
+   ```
 
-3. *Execute o script*
-   bash
+3. **Execute o script**
+   ```bash
    ./meu_script.sh
-   
+   ```
 
 ---
 
 ## 📌 Requisitos
 
 - Distribuição Linux
-- curl instalado
+- `curl` instalado
 - Webhook do Discord configurado (modifique no código)
 
 ---
 
 ## 💡 Exemplo de uso
 
-Suponha que você tenha um servidor local rodando na porta 80 (http://localhost). Ao executar o script, ele irá verificar se está online. Se o site estiver fora do ar (retorno diferente de 200), ele registra isso em um arquivo .log e envia uma mensagem no seu canal do Discord avisando sobre o problema.
+Suponha que você tenha um servidor local rodando na porta 80 (`http://localhost`). Ao executar o script, ele irá verificar se está online. Se o site estiver fora do ar (retorno diferente de 200), ele registra isso em um arquivo `.log` e envia uma mensagem no seu canal do Discord avisando sobre o problema.
 
 ---
 
 ## 📄 Código com explicações
 
-bash
+```bash
 #!/bin/bash
 
 # Caminho padrão (opcional, pode ser descomentado se necessário)
@@ -85,14 +85,14 @@ else
   echo "$LOG_MSG" >> $LOG_FILE
   send_discord_alert ":white_check_mark: $LOG_MSG"
 fi
-
+```
 
 ---
 
 ## 🧠 O que você aprende com esse projeto?
 
 - Como escrever scripts em Bash
-- Como usar curl para requisições HTTP
+- Como usar `curl` para requisições HTTP
 - Como trabalhar com arquivos de log no Linux
 - Como integrar notificações com o Discord via Webhook
 - Como automatizar tarefas de monitoramento
@@ -108,14 +108,14 @@ O site monitorado pelo script é uma página HTML simples e moderna, criada por 
 - Cabeçalho fixo com navegação (Início, Sobre, Contato)
 - Seção de boas-vindas com mensagens e botão de ação
 - Fundo com imagem de alta resolução
-- Design responsivo e animações CSS (fadeInUp, fadeInDown)
+- Design responsivo e animações CSS (`fadeInUp`, `fadeInDown`)
 - Estilizado com CSS puro (sem frameworks externos)
 
 ---
 
-## 🖥 Código-fonte (resumo do HTML)
+## 🖥️ Código-fonte (resumo do HTML)
 
-html
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -158,9 +158,18 @@ html
   </section>
 </body>
 </html>
+```
 
-## 🖥 Prévia do web site (resumo do HTML)
-(D:\imagem\Fotos minhas)
+---
+
+## 🖥 Prévia do site
+
+Adicione aqui uma captura de tela do site. Por exemplo:
+
+```markdown
+![Captura de Tela do Site](assets/screenshot.png)
+```
+
 ---
 
 ## 🛠 Melhorias Futuras
@@ -180,4 +189,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
