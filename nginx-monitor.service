@@ -1,0 +1,15 @@
+#[Unit]
+#Description=Monitoramento do Nginx
+#After=network.target nginx.service
+
+
+#[Service]
+#Type=simple
+#ExecStart=/bin/bash /mnt/d/projetoLinuxPb/check_site.sh
+#WorkingDirectory=/mnt/d/projetoLinuxPb
+#Restart=always
+#RestartSec=5
+
+#[Install]
+#WantedBy=multi-user.target
+
