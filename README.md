@@ -109,9 +109,17 @@ Executar o comando ```bash sudo systemctl start nginx``` inicia o servidor Nginx
 
 Executar o comando ```bassudo systemctl stop nginx``` interrompe o servidor Nginx, fazendo com que o site deixe de estar disponível no navegador.
 
+## Visualização do Boot do Discord Indicando a Mensagem de Site Online
+
+![Tela discord site online](imagens/discordon.jpg)
+
 ## Visualização do Site Fora do Ar
 
 ![Tela fora do ar](imagens/siteoff.jpg)
+
+## Visualização do Boot do Discord Indicando a Mensagem de Site Fora do Ar
+
+![Tela discord site fora do ar](imagens/discordoff.jpg)
 
 ## 🌐 Site Monitorado
 
