@@ -173,7 +173,7 @@ O trecho de código abaixo configura o **Nginx** para servir arquivos de um dire
 ```nginx
 server {
     listen 0.0.0.0:80;
-    server_name 172.28.168.201 localhost;
+    server_name SEU IP PÚBLICO localhost;
 
     root /mnt/d/projetoLinuxPb;
     index index.html;
