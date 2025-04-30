@@ -3,7 +3,7 @@
 
 URL="http://localhost"
 LOG_FILE="/mnt/d/projetoLinuxPb/meu_script.log"
-DISCORD_WEBHOOK="https://discord.com/api/webhooks/1364322138013831261/i7YeE7OFFsh8U395jXPKtiswGdJQ3xaIgfCMbrWM8UwDS8lYtQyZD3porGu0NNj1nzL4"
+DISCORD_WEBHOOK="SEUWEBHOOK"
 
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
